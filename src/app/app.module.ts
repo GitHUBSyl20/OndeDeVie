@@ -12,6 +12,7 @@ import { EvenementsComponent } from './evenements/evenements.component';
 import { InitiationComponent } from './initiation/initiation.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatJumbotronModule } from '@angular-material-extensions/jumbotron';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatJumbotronModule
   ],
   providers: [],
   bootstrap: [AppComponent]

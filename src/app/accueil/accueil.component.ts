@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, AfterViewInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.sass']
 })
-export class AccueilComponent implements OnInit {
+export class AccueilComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
   }
+
 
 }
