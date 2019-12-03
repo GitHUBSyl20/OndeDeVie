@@ -1,11 +1,10 @@
 import { Component, OnInit, ChangeDetectorRef, AfterViewInit } from '@angular/core';
 
 
-
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.sass']
+  styles: ['./accueil.component.sass', '../../styles.sass']
 })
 export class AccueilComponent implements OnInit, AfterViewInit {
 
@@ -16,6 +15,4 @@ export class AccueilComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.cdr.detectChanges();
   }
-
-
 }

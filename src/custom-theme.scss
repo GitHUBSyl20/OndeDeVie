@@ -26,6 +26,5 @@ $ondedevie-theme: mat-light-theme($ondedevie-primary, $ondedevie-accent, $ondede
 // that you are using.
 @include angular-material-theme($ondedevie-theme);
 
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -13,6 +13,14 @@ import { InitiationComponent } from './initiation/initiation.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatJumbotronModule } from '@angular-material-extensions/jumbotron';
+import { NavigationComponent } from './navigation/navigation.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -23,13 +31,20 @@ import { MatJumbotronModule } from '@angular-material-extensions/jumbotron';
     AteliersComponent,
     TarifsComponent,
     EvenementsComponent,
-    InitiationComponent
+    InitiationComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
+    MatSliderModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
     MatJumbotronModule
   ],
   providers: [],

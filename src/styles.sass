@@ -13,7 +13,7 @@ $candy-app-primary: mat-palette($mat-indigo)
 $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400)
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-red)
+$candy-app-warn: mat-palette($mat-red)
 
 // Create the theme object (a Sass map containing all of the palettes).
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn)
@@ -22,3 +22,18 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($candy-app-theme)
+
+//GENERAL JUMBOTRON STYLE
+
+.jumboText
+    position: absolute
+    top:30vh
+    left: 40vw
+    color: white
+    font-size: 4rem !important
+        
+img
+    margin: -20px
+
+.container
+    margin-top: 30px
