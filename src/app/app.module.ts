@@ -21,6 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { MatListModule } from '@angular/material/list';
     TarifsComponent,
     EvenementsComponent,
     InitiationComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

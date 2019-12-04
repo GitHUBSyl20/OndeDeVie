@@ -1,9 +1,13 @@
-<div class="container">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae aperiam commodi itaque perspiciatis vel 
-        aspernatur possimus a perferendis beatae. Accusantium doloremque quidem unde repellat recusandae. 
-        Sunt perferendis vel deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum error at perferendis repellat saepe porro facilis ab! Nesciunt labore cupiditate quis, ex sit veritatis repellat assumenda officia sequi at culpa.
-        Perspiciatis eos aspernatur unde animi enim praesentium cum voluptatem necessitatibus et inventore ab molestiae, ipsam neque tempora architecto tempore? Repudiandae, quas eveniet corporis dignissimos libero ipsum facere ratione. Doloribus, ipsum?
-        Nam aut repudiandae at adipisci neque asperiores corrupti veniam sunt sint doloremque. Earum sequi id culpa odit quam perspiciatis, eius nobis eligendi, ea numquam, quia quod velit eos doloribus dicta.
-        Unde ad provident doloribus quo. Repudiandae beatae voluptatum vero consequatur esse neque quibusdam labore exercitationem commodi saepe doloribus iusto magni, veritatis a fuga sunt error obcaecati ab autem assumenda eligendi!
-        Beatae rerum, hic ea, explicabo nostrum debitis tempora maiores cum accusantium ratione ducimus dolore iusto? Officiis consequuntur eius perferendis accusantium nostrum accusamus! Tempora facilis sequi sed, odit assumenda quibusdam atque?ëé</p>
+<div *ngIf="car | async as loadedCar">
+    <div>
+        <h1>
+            {{loadedCar.titre}}
+        </h1>
+        <div class="container">
+            <p>
+                 {{loadedCar.contenu}}
+            </p>
+           
+        </div>
+    </div>
 </div>
