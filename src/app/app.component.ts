@@ -14,5 +14,6 @@ import { MatJumbotronModule } from '@angular-material-extensions/jumbotron';
 })
 
 export class AppComponent {
+  active = 'active';
   title = 'ondedevie';
 }

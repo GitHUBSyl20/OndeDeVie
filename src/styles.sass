@@ -1,6 +1,11 @@
 @import '~@angular/material/theming'
 // Plus imports for other components in your app.
 
+/* You can add global styles to this file, and also import other style files */
+ @import 'semantic-ui-css/semantic.css'
+    
+@import 'src/app/accueil/accueil.component.sass'
+
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -25,19 +30,41 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 //GENERAL JUMBOTRON STYLE
 
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Lobster&display=swap')
+
+$bigTitleFont : 'Lobster', cursive
+$basicFont: 'Bree Serif', serif
+
+body
+    overflow-x: hidden
+    background-color: #eeebd7
+
+navbar
+     background-color: #796a0e
+
+p, li, h1, h2
+   font-family: $basicFont
+
+.webSiteMainTitle
+    margin: 5vh 0
+
 .jumboText
     position: absolute
-    top:30vh
-    left: 40vw
+    top:15vh
     color: white
     font-size: 4rem !important
-        
+    font-family: $bigTitleFont
+
 img
     margin: -20px
-
+    
 .container
     margin-top: 30px
 
 .cardContainer
     width: 100%
     margin: auto
+
+@media screen and ( max-width: 767px )
+    

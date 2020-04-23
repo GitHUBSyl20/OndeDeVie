@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ContentfulService } from '../contentful.service';
 
 @Component({
   selector: 'app-soins',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoinsComponent implements OnInit {
 
-  constructor() { }
+  pages: Observable<any>;
+
+  constructor(private contentful: ContentfulService) {}
 
   ngOnInit() {
+    this.pages = this.contentful.getContent('4sTZnOfhCLHWTnhXoAVIHS');
   }
-
 }

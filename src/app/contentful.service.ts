@@ -7,8 +7,8 @@ import { map } from 'rxjs/operators';
 export class ContentfulService {
 
   private client = contentful.createClient({
-    space: 'eoaum667w49w',
-    accessToken: 'KKAQ-i_9ZDCS8aw41uK8VyWGDfQ0qM6YC9ABvOT7cxo'
+    space: 'xqzl4tuyajo6',
+    accessToken: 'XrmC8rsA3fTpwvSL0_Fky3JUoDEzLiVjFKS0_1lhyIw'
   });
 
   constructor() { }

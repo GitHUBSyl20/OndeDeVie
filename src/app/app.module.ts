@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { YogaComponent } from './yoga/yoga.component';
 import { SoinsComponent } from './soins/soins.component';
-import { AteliersComponent } from './ateliers/ateliers.component';
+import { AteliersComponent } from './ateliers/ateliers/ateliers.component';
 import { TarifsComponent } from './tarifs/tarifs.component';
 import { EvenementsComponent } from './evenements/evenements.component';
 import { InitiationComponent } from './initiation/initiation.component';
@@ -22,10 +22,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { SoinsChamaniquesComponent } from './soins-chamaniques/soins-chamaniques.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TemoignageComponent } from './temoignage/temoignage.component';
+import { TemoignagesComponent } from './temoignages/temoignages.component';
 
 
 @NgModule({
   declarations: [
+    SoinsChamaniquesComponent,
     AppComponent,
     AccueilComponent,
     YogaComponent,
@@ -35,7 +42,13 @@ import { FooterComponent } from './footer/footer.component';
     EvenementsComponent,
     InitiationComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    SoinsChamaniquesComponent,
+    ContactInfoComponent,
+    PageNotFoundComponent,
+    TemoignageComponent,
+    TemoignagesComponent
   ],
   imports: [
     BrowserModule,

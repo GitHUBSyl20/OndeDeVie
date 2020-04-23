@@ -4,7 +4,7 @@ import { Component, OnInit, ChangeDetectorRef, AfterViewInit } from '@angular/co
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styles: ['./accueil.component.sass', '../../styles.sass']
+  styles: ['../../styles.sass']
 })
 export class AccueilComponent implements OnInit, AfterViewInit {
 

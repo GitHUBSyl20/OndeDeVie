@@ -1,16 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" routerLink="/accueil">Accueil <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/ateliers">Ateliers</a>
-        <a class="nav-item nav-link" routerLink="/evenements">Evenements</a>
-        <a class="nav-item nav-link" routerLink="/initiations">Initiations</a>
-        <a class="nav-item nav-link" routerLink="/soins">Soins</a>
-        <a class="nav-item nav-link" routerLink="/yoga">Yoga</a>
-        <a class="nav-item nav-link" routerLink="/tarifs">Tarifs</a>
+      <div class="navbar-nav m-auto">
+        <a class="nav-item nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLink="/accueil" routerLinkActive="active-link">Accueil</a>
+        <a class="nav-item nav-link" routerLink="/ateliers" routerLinkActive="active-link">Ateliers</a>
+        <a class="nav-item nav-link" routerLink="/evenements" routerLinkActive="active-link">Evenements</a>
+        <a class="nav-item nav-link" routerLink="/initiations" routerLinkActive="active-link">Initiations</a>
+        <a class="nav-item nav-link" routerLink="/soins" routerLinkActive="active-link">Soins Energétiques</a>
+        <a class="nav-item nav-link" routerLink="/soins-chamaniques" routerLinkActive="active-link">Soins Chamaniques</a>
+        <a class="nav-item nav-link" routerLink="/yoga" routerLinkActive="active-link">Yoga</a>
+        <a class="nav-item nav-link" routerLink="/temoignages" routerLinkActive="active-link">Temoignage</a>
+        <a class="nav-item nav-link" routerLink="/tarifs" routerLinkActive="active-link">Tarifs</a>
       </div>
     </div>
   </nav>
