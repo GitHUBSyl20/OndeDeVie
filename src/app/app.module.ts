@@ -20,6 +20,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SoinsChamaniquesComponent } from './soins-chamaniques/soins-chamaniques.component';
@@ -58,7 +59,8 @@ import { TemoignagesComponent } from './temoignages/temoignages.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatJumbotronModule
+    MatJumbotronModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
