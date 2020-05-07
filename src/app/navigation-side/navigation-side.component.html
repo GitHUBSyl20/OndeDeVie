@@ -9,8 +9,15 @@
   <mat-sidenav-container class="example-container">
     <mat-sidenav #drawer mode="over" opened role="navigation">
       <mat-nav-list>
-        <a mat-list-item routerLink='/first'>First Component</a>
-        <a mat-list-item routerLink='/second'>Second Component</a>
+            <a class="nav-item nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLink="/accueil" routerLinkActive="active-link">Accueil</a>
+            <a class="nav-item nav-link" routerLink="/ateliers" routerLinkActive="active-link">Ateliers</a>
+            <a class="nav-item nav-link" routerLink="/evenements" routerLinkActive="active-link">Evenements</a>
+            <a class="nav-item nav-link" routerLink="/initiations" routerLinkActive="active-link">Initiations</a>
+            <a class="nav-item nav-link" routerLink="/soins" routerLinkActive="active-link">Soins Energétiques</a>
+            <a class="nav-item nav-link" routerLink="/soins-chamaniques" routerLinkActive="active-link">Soins Chamaniques</a>
+            <a class="nav-item nav-link" routerLink="/yoga" routerLinkActive="active-link">Yoga</a>
+            <a class="nav-item nav-link" routerLink="/temoignages" routerLinkActive="active-link">Temoignage</a>
+            <a class="nav-item nav-link" routerLink="/tarifs" routerLinkActive="active-link">Tarifs</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>

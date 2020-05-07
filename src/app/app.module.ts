@@ -31,6 +31,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TemoignagesComponent } from './temoignages/temoignages.component';
 import { NavigationSideComponent } from './navigation-side/navigation-side.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -71,6 +72,7 @@ import { NavigationSideComponent } from './navigation-side/navigation-side.compo
     FormsModule,
     FlexLayoutModule,
     MatSidenavModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
