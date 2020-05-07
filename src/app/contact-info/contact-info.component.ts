@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-info',
   templateUrl: './contact-info.component.html',
   styleUrls: ['./contact-info.component.sass']
 })
-export class ContactInfoComponent implements OnInit {
 
+export class ContactInfoComponent {
   constructor() { }
-
-  ngOnInit() {
+  onSubmitForm(form: NgForm) {
+    console.log('submited');
   }
-
 }

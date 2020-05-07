@@ -3,6 +3,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
+import { NavigationSideComponent } from '../navigation-side/navigation-side.component';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -10,6 +12,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class NavigationComponent {
   @Input() active;
+  hidden = true;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
