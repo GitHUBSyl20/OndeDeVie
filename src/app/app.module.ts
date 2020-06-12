@@ -30,7 +30,7 @@ import { SoinsChamaniquesComponent } from './soins-chamaniques/soins-chamaniques
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TemoignagesComponent } from './temoignages/temoignages.component';
-import { NavigationSideComponent } from './navigation-side/navigation-side.component';
+
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -53,7 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactInfoComponent,
     PageNotFoundComponent,
     TemoignagesComponent,
-    NavigationSideComponent,
+    NavigationComponent,
+
   ],
   imports: [
     BrowserModule,
