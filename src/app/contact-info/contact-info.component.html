@@ -1,8 +1,22 @@
-<p>PRENDRE RENDEZ VOUS</p>
+<div class="contactForm">
 
-<form (submit)="onSubmitForm(formContent)"  #formContent="ngForm">
-    <mat-form-field >
-        <mat-label>NOM</mat-label>
+  <p>PRENDRE RENDEZ VOUS</p>
+
+  <form (submit)="onSubmitForm(formContent)"  #formContent="ngForm">
+      <mat-form-field >
+          <mat-label>NOM</mat-label>
+          <input
+          matInput
+          required
+          placeholder="Entrez votre nom"
+          ngModel
+          type="text"
+          name="name"
+          #name="ngModel"
+        />
+      </mat-form-field>
+      <mat-form-field >
+        <mat-label>PRENOM</mat-label>
         <input
         matInput
         required
@@ -13,35 +27,35 @@
         #name="ngModel"
       />
     </mat-form-field>
-    <mat-form-field >
-      <mat-label>e-mail</mat-label>
-      <input
+      <mat-form-field >
+        <mat-label>e-mail</mat-label>
+        <input
+        matInput
+        required
+        placeholder="Entrez votre e-mail"
+        ngModel
+        type="email"
+        name="email"
+        #email="ngModel"
+      />
+      </mat-form-field>
+      <mat-form-field>
+      <mat-label>Votre message</mat-label>
+      <textarea
       matInput
       required
-      placeholder="Entrez votre e-mail"
+      placeholder="Entrez votre message"
       ngModel
       type="text"
-      name="email"
-      #email="ngModel"
-    />
-    </mat-form-field>
-    <mat-form-field>
-    <mat-label>message</mat-label>
-    <input
-    matInput
-    required
-    placeholder="Entrez votre message"
-    ngModel
-    type="text"
-    name="message"
-    #message="ngModel"
-  />
-    </mat-form-field>
-      
-  <button mat-raised-button
-  color="primary"
-  type="submit">
-   Envoyer
-  </button>
-    
-</form>
+      name="message"
+      #message="ngModel"
+    ></textarea>
+      </mat-form-field>
+        
+    <button mat-raised-button
+    color="primary"
+    type="submit">
+     Envoyer
+    </button>
+  </form>  
+</div>
